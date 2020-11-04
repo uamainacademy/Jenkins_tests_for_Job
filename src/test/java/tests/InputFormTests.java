@@ -39,7 +39,7 @@ public class InputFormTests {
 
     @Test
     public void SimpleInputFormTest1() {
-        String expectedText = "Hello";
+        String expectedText = "Hello1";
         driver.findElement(inputFormLink).click();
         utils.getWaiter(driver, 3)
                 .until(visibilityOfElementLocated(simpleFormDemoLink)).click();
