@@ -39,14 +39,14 @@ public class InputFormTests {
 
     @Test
     public void SimpleInputFormTest1() {
-        String expectedText = "Hello1";
+        String expectedText = "Hello";
         driver.findElement(inputFormLink).click();
         utils.getWaiter(driver, 3)
                 .until(visibilityOfElementLocated(simpleFormDemoLink)).click();
         driver.findElement(enterMessageField).sendKeys(expectedText);
         driver.findElement(showMessageButton).click();
         String actualResult = driver.findElement(resultText).getText();
-        assertEquals(expectedText, actualResult);
+        assertEquals("Alalalla", actualResult);
     }
 
     @After
